@@ -1,0 +1,135 @@
+.compare-commits-container {
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  margin: 60px auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.compare-commits-container:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.compare-commits-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.compare-commits-container div {
+  margin-bottom: 20px;
+}
+
+.compare-commits-container input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.compare-commits-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+button {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d99);
+  box-shadow: 0 6px 18px rgba(0, 91, 187, 0.3);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 77, 77, 0.1);
+  border-left: 4px solid #ff4d4d;
+}
+
+.changes {
+  margin-top: 40px;
+}
+
+.changes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.changes li {
+  padding: 14px;
+  margin-bottom: 12px;
+  background-color: #f3f6fa;
+  border-left: 8px solid #007bff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.changes li:hover {
+  background-color: #eaf4ff;
+  border-color: #0056b3;
+}
+
+.changes li strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #222;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Floating Button Animation */
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 10px rgba(0, 91, 187, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .compare-commits-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
