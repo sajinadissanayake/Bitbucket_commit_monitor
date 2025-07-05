@@ -1,4 +1,4 @@
-# 📊 Intern Contribution Management System – SLT Mobitel
+# 📊 Intern Contribution Management System 
 
 This is a full-stack MERN application built during my internship at **SLT Mobitel**. It is designed to track and evaluate intern activity on **Bitbucket repositories** using real-time data, with a strong focus on detecting fake commits and promoting fair performance reviews.
 
