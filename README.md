@@ -28,7 +28,8 @@ This is a full-stack MERN application built during my internship at **SLT Mobite
 
 ## 📸 Demo
 
-🎥 [(https://youtu.be/h6pVuGejxt4)](#) 
+🎥 [Watch the Demo Video on YouTube](https://youtu.be/h6pVuGejxt4)
+
 
 ---
 
